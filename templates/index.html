@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DevOps Project | AWS Docker Flask</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <div class="hero">
+    <h1>🚀 DevOps Project Deployment</h1>
+    <p>Flask Application · Docker · AWS EC2 · Nginx · Jenkins</p>
+  </div>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>📌 Project Overview</h2>
+      <p>
+        End-to-end DevOps project demonstrating containerized deployment
+        of a Python Flask application on AWS EC2 using Docker and Nginx
+        reverse proxy with CI/CD via Jenkins.
+      </p>
+    </div>
+
+    <div class="card grid">
+      <div>
+        <h3>🛠 Tech Stack</h3>
+        <ul>
+          <li>AWS EC2 (Linux)</li>
+          <li>Docker</li>
+          <li>Python Flask</li>
+          <li>Nginx Reverse Proxy</li>
+          <li>GitHub Webhooks</li>
+          <li>Jenkins CI/CD</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>🏗 Architecture</h3>
+        <p class="arch">
+          User → Browser → AWS EC2 → Nginx → Docker Container → Flask App
+        </p>
+      </div>
+    </div>
+
+    <div class="card status">
+      <h2>✅ Deployment Status</h2>
+      <p id="status-text">Application deployed successfully 🎉</p>
+      <button onclick="celebrate()">Celebrate Deployment 🎊</button>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Built with ❤️ by a DevOps Engineer in the making</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
